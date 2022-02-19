@@ -15,7 +15,7 @@ Below is a summary of what each terraform template is provisioning. There are ad
 
 
 ### variables.tf
-Declares common variables (such as app_name, region etc) that are referenced in other templates.
+Declares common variables (such as name, region etc) that are referenced in other templates.
 - This is where I learnt about variables.
 
 ### main.tf
