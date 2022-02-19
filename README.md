@@ -16,7 +16,7 @@ Below is a summary of what each terraform template is provisioning. There are ad
 
 ### variables.tf
 Declares common variables (such as name, region etc) that are referenced in other templates.
-- This is where I learnt about variables.
+- This is where I learnt about variables in terraform.
 
 ### main.tf
 Declares the terraform and aws provider configuration.
@@ -32,7 +32,7 @@ Defines a VPC with both public and private subnets. Tags the VPC and subnets.
 ### ecs.tf
 Defines an ECS cluster, a task definition, and a service.
 
-Lastly, this is my first time playing with terraform and I must say it was quite easy to get resources provisioned. Documentation also helped a lot. I work mainly with cloudformation so overall, this has been a breath of fresh air.
+Lastly, this is my first time playing with Terraform and I must say it was quite easy to get resources provisioned. Documentation also helped me a lot. I work mainly with cloudformation so overall, this has been a breath of fresh air.
 
 
 ## Deploying the resources
