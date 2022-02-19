@@ -37,7 +37,7 @@ Lastly, this is my first time playing with Terraform and I must say it was quite
 
 ## Deploying the resources
 
-- unzip `app-infra.zip` or `git clone git@github.com:lucidnas/terraform-templates.git` and cd into the folder.
+- unzip `app-infra.zip` or `git clone https://github.com/lucidnas/terraform-templates.git` and cd into the folder.
 - run `terraform apply -var name=your-app-name` and accept deployment prompt.
 
 
