@@ -22,7 +22,7 @@ Declares common variables (such as name, region etc) that are referenced in othe
 Declares the terraform and aws provider configuration.
 
 ### s3.tf
-Defines a private s3 bucket with versioning and S3 Server Side Encryption enabled. Public Access is denied. 
+Defines a private s3 bucket with versioning and S3 Server Side Encryption enabled. Public Access is also denied. 
 
 ### vpc.tf
 Defines a VPC with both public and private subnets. Tags the VPC and subnets. 
