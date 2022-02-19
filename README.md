@@ -4,7 +4,7 @@
 # App Infrastructure
 
 ### Architecture Principle
-Over the years, I've come to embrace the principle of separation of concerns and I've found splitting cloud resources into separate templates to be the most effective way I manage and organize cloud resources, especially those of different types. 
+Over the years, I've come to embrace the principle of separation of concerns and I've found decoupling cloud resources into separate templates to be the most effective way I manage and organize cloud resources, especially those of different types. 
 
 Of course, there are scenarios where it makes sense to group cloud resources together in one huge template but my preference will always be to decouple first and couple later if the scenario calls for that.
 
@@ -16,7 +16,7 @@ Below is a summary of what each terraform template is provisioning. There are ad
 
 ### variables.tf
 Declares common variables (such as app_name, region etc) that are referenced in other templates.
-- This is where I learnt about variables
+- This is where I learnt about variables.
 
 ### main.tf
 Declares the terraform and aws provider configuration.
@@ -26,7 +26,7 @@ Defines a private s3 bucket with versioning and S3 Server Side Encryption enable
 
 ### vpc.tf
 Defines a VPC with both public and private subnets. Tags the VPC and subnets. 
-- I used the vpc module which is quite useful as it takes care of a bunch of other resources and operations such as subnets, nat gateway, internet gateways, attachment and tagging of these resources
+- I used the vpc module which is quite useful as it takes care of a bunch of other resources and operations such as subnets, nat gateway, internet gateways, attachment and tagging of these resources.
 - This is where I learnt about terraform modules, data sources which are all pretty cool concepts.
 
 ### ecs.tf
@@ -37,8 +37,8 @@ Lastly, this is my first time playing with terraform and I must say it was quite
 
 ## Deploying the resources
 
-- unzip `app-infra.zip` or clone  and cd into alloy-app folder
-- run `terraform apply -var name=your-app-name` and accept deployment prompt
+- unzip `app-infra.zip` or `git clone git@github.com:lucidnas/terraform-templates.git` and cd into the folder.
+- run `terraform apply -var name=your-app-name` and accept deployment prompt.
 
 
 
