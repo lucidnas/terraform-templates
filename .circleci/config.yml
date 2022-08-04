@@ -1,0 +1,8 @@
+version: "2.1"
+orbs:
+  hello: lucidnas/hello-orb@dev:0.1.0
+workflows:
+  use-my-orb:
+    jobs:
+      - hello/greet:
+          to: abdul
